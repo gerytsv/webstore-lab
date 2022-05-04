@@ -1,1 +1,17 @@
-<p>simple-form works!</p>
+<form #formElement #formModel="ngForm" (ngSubmit)="onSubmit(formModel)">
+  <div ngModelGroup="name" #nameCtrl="ngModelGroup">
+    <input name="first" [(ngModel)]="name.first" minlength="2" />
+    <input name="last" [(ngModel)]="name.last" minlength="2" />
+  </div>
+  <p class="error" *ngIf="nameCtrl.invalid">Name is invalid</p>
+
+  <input name="email" #emailCtrl="ngModel" [(ngModel)]="email" email />
+  <p class="error" *ngIf="emailCtrl.invalid">Email is invalid</p>
+  <button type="submit" [disabled]="formModel.pristine || formModel.invalid">
+    Submit
+  </button>
+  <button type="button" (click)="setValue()">Set name values</button>
+</form>
+<p>{{ formModel.value | json }}</p>
+<p>{{ formModel.valid }}</p>
+<p>{{ elemClasses }}</p>

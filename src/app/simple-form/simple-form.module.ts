@@ -5,10 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { SimpleFormComponent } from './simple-form/simple-form.component';
 
 @NgModule({
-  declarations: [
-    SimpleFormComponent
-  ],
+  declarations: [SimpleFormComponent],
   imports: [CommonModule, BrowserModule, FormsModule],
-  exports: []
+  exports: [SimpleFormComponent],
 })
 export class SimpleFormModule {}
