@@ -20,4 +20,10 @@
       </mat-card-header>
     </mat-card>
   </div>
+  <ws-product-detail
+    class="product-card-details"
+    *ngIf="selectedProduct"
+    [mode]="this.mode"
+    [product]="this.selectedProduct"
+  ></ws-product-detail>
 </div>

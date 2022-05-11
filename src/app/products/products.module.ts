@@ -9,9 +9,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
-  declarations: [ProductListComponent],
+  declarations: [ProductListComponent, ProductDetailComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -23,6 +24,6 @@ import { ProductListComponent } from './product-list/product-list.component';
     MatInputModule,
     MatSnackBarModule,
   ],
-  exports: [ProductListComponent],
+  exports: [ProductListComponent, ProductDetailComponent],
 })
 export class ProductsModule {}

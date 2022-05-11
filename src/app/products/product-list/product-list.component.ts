@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MOCK_PRODUCTS } from '../mock-products';
 import { Product } from '../product.model';
 import { v4 as uuidv4 } from 'uuid';
-
-export type PresentationMode = 'present' | 'edit' | 'add';
+import { PresentationMode } from 'src/app/shared/common-types';
 
 @Component({
   selector: 'ws-product-list',

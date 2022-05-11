@@ -7,7 +7,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./simple-form.component.scss'],
 })
 export class SimpleFormComponent {
-  @ViewChild('fElem') formElem: ElementRef | undefined;
+  @ViewChild('formElement') formElem: ElementRef | undefined;
   name = { first: 'John', last: 'Smith' };
   email = '';
   elemClasses = '';

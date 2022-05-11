@@ -32,17 +32,17 @@ svg#clouds {
   width: 1920px;
 }
 
-.content {
-  height: 100vh;
-  display: flex;
-  margin: 82px auto 32px;
-  padding: 0 16px;
-  max-width: 960px;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+// .content {
+//   height: 100vh;
+//   display: flex;
+//   margin: 82px auto 32px;
+//   padding: 0 16px;
+//   max-width: 960px;
+//   flex-direction: column;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   justify-content: center;
+// }
 
 footer {
   margin-top: 8px;
@@ -55,4 +55,16 @@ footer {
 footer a {
   display: flex;
   align-items: center;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
